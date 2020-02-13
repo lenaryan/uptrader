@@ -18,6 +18,57 @@
 }
 
 body {
-    font-family: "PFDinTextPro-Regular", sans-serif;
+    font-family: "PFDinTextPro-Light", sans-serif;
     margin: 0;
+    color: #171717;}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top {
+    background: url(/src/images/beach.jpg) no-repeat center;
+    padding: 250px 0 200px;
+}
+
+.top__title {
+    margin: 0 auto 80px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circles__item {
+    height: 370px;
+    width: 370px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circles__icon {
+    height: 85px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.circles__img {
+    display: block;
+}
+
+.circles__title {
+    font-size: 28px;
+    margin: 25px 0 20px;
 }
