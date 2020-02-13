@@ -58,6 +58,23 @@ body {
     text-align: center;
 }
 
+.circles__item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.circles__item:hover:after {
+    border-color: #009e82;
+}
+
 .circles__icon {
     height: 85px;
     display: flex;
@@ -71,4 +88,99 @@ body {
 .circles__title {
     font-size: 28px;
     margin: 25px 0 20px;
+}
+
+.bottom {
+    background: url(/src/images/human.png) #f5f4db no-repeat 0 bottom;
+    background-size: cover;
+}
+
+.tabs {
+    height: 100px;
+    background: transparent;
+}
+
+.tabs .tab {
+    text-transform: initial;
+    line-height: 100px;
+    height: 100px;
+}
+
+.tabs .tab a {
+    color: #2e2e2e;
+    font-size: 28px;
+}
+
+.tabs .tab a.active,
+.tabs .tab a:hover {
+    font-family: "PFDinTextPro-Regular", sans-serif;
+    color: #009e82;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: transparent;
+}
+
+.tabs .indicator {
+    background: #009e82;
+}
+
+.tabs-row {
+    border-bottom: 2px solid #ccc;
+}
+
+.sale__list {
+    counter-reset: section;
+    list-style-type: none;
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+.sale__item::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+    margin-right: 15px;
+    font-size: 32px;
+    color: #00b596;
+}
+
+.sale__par {
+    font-size: 19px;
+    margin: 0 0 40px;
+}
+
+.sale__item {
+    font-size: 19px;
+    margin: 4px 0;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.sale__subtitle {
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+
+.tab-inside {
+    padding: 70px 0 250px;
+    width: 55%;
+    min-height: 700px;
+}
+
+.sale__button {
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "PFDinTextPro-Regular", sans-serif;
+    background: #009e82;
+    padding: 12px 30px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sale-button:hover,
+.sale-button:focus {
+    opacity: 0.7;
 }

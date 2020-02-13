@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".tabs");M.Tabs.init(e)});
