@@ -95,6 +95,17 @@
     }
 
     .collapsible {
-        display: initial;
+        display: block;
+        border: none;
+        box-shadow: none;
+    }
+
+    .collapsible-header {
+        background: rgba(255,255,255,.6);
+        border:none;
+    }
+    
+    .collapsible__item {
+        margin-bottom: 10px;
     }
 }
