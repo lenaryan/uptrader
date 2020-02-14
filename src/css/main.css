@@ -31,6 +31,7 @@ body {
 .top {
     background: url(/src/images/beach.jpg) no-repeat center;
     padding: 250px 0 200px;
+    background-size: cover;
 }
 
 .top__title {
@@ -91,7 +92,7 @@ body {
 }
 
 .bottom {
-    background: url(/src/images/human.png) #f5f4db no-repeat 0 bottom;
+    background: url(/src/images/human.png) #f5f4db no-repeat center bottom;
     background-size: cover;
 }
 
