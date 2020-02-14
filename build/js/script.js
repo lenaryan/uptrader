@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".tabs");M.Tabs.init(e)});
+document.addEventListener("DOMContentLoaded",function(){var e=null;740<window.innerWidth?(e=document.querySelector(".tabs"),M.Tabs.init(e)):(e=document.querySelectorAll(".collapsible"),M.Collapsible.init(e))});

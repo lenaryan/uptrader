@@ -40,6 +40,10 @@ body {
     text-align: center;
 }
 
+.collapsible {
+    display: none;
+}
+
 .circles {
     display: flex;
     align-items: center;

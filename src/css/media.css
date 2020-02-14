@@ -88,3 +88,13 @@
         width: 70%;
     }
 }
+
+@media (max-width: 740px) {
+    .circles, .bottom {
+        display: none;
+    }
+
+    .collapsible {
+        display: initial;
+    }
+}
