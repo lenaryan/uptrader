@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 740px) {
+    .container {
+        width: 100%;
+    }
+
     .circles, .bottom {
         display: none;
     }
@@ -103,9 +107,273 @@
     .collapsible-header {
         background: rgba(255,255,255,.6);
         border:none;
+        padding: 20px 30px;
+        height: 90px;
+        align-items: center;
+        font-size: 24px;
+        font-family: "PFDinTextPro-Regular", sans-serif;
+        position: relative;
+        margin: 0 20px;
+    }
+
+    .collapsible-header:after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #888;
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: rotate(45deg) translateY(-75%);
+        border-top: transparent;
+        border-left: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .collapsible__item.active .collapsible-header:after {
+        transform: rotate(-135deg) translateY(25%);
+        right: 35px;
     }
     
     .collapsible__item {
         margin-bottom: 10px;
+    }
+
+    .top {
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+
+    .collapsible__img {
+        display: block;
+        max-width: 45px;
+        margin-right: 30px;
+    }
+
+    .collapsible-body {
+        padding: 25px 0 15px;
+        border-bottom: none;
+    }
+
+    .body-padding {
+        padding: 0 40px;
+        margin-bottom: -100px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .collapsible__human {
+        width: 100%;
+        display: block;
+    }
+
+    .sale__par {
+        font-size: 21px;
+        margin: 0 0 30px;
+    }
+
+    .sale__subtitle {
+        font-size: 26px;
+        margin: 0 0 20px;
+    }
+
+    .sale__list {
+        width: 100%;
+    }
+
+    .sale__item {
+        font-size: 21px;
+    }
+
+    .sale__button {
+        font-size: 21px;
+        padding: 14px 35px;
+    }
+
+    .bg-peach {
+        background: #eff0d6;
+    }
+}
+
+@media (max-width: 580px) {
+    .body-padding {
+        margin-bottom: -50px;
+    }
+
+    .top__title {
+        margin: 0 7% 60px;
+    }
+
+    .top {
+        padding: 80px 0 50px;
+    }
+
+    .collapsible__img {
+        max-width: 40px;
+        margin-right: 25px;
+    }
+
+    .collapsible-header {
+        height: 80px;
+    }
+
+    .collapsible-header:after {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top__title {
+        font-size: 41px;
+    }
+
+    .collapsible-header {
+        font-size: 22px;
+        padding: 20px 25px;
+    }
+
+    .collapsible-header:after {
+        right: 35px;
+    }
+
+    .sale__par {
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+
+    .sale__item {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .sale__item::before {
+        font-size: 30px;
+    }
+
+    .sale__subtitle {
+        font-size: 24px;
+        margin: 0 0 15px;
+    }
+
+    .sale__button {
+        font-size: 20px;
+        padding: 13px 30px;
+    }
+
+    .sale__list {
+        margin: 0 0 30px;
+    }
+
+    .body-padding {
+        margin-bottom: -20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .top__title {
+        margin: 0 7% 40px;
+        font-size: 38px;
+    }
+
+    .top {
+        padding: 60px 0;
+    }
+
+    .collapsible-header {
+        font-size: 20px;
+        padding: 0 20px;
+        height: 70px;
+        margin: 0 15px;
+    }
+
+    .collapsible__img {
+        max-width: 35px;
+        margin-right: 15px;
+    }
+
+    .collapsible-header:after {
+        width: 14px;
+        height: 14px;
+        right: 30px;
+    }
+
+    .collapsible__item.active .collapsible-header:after {
+        right: 25px;
+    }
+
+    .sale__par {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .sale__item {
+        font-size: 18px;
+    }
+
+    .sale__subtitle {
+        font-size: 23px;
+    }
+
+    .body-padding {
+        line-height: 1.4;
+    }
+
+    .sale__button {
+        font-size: 19px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 380px) {
+    .collapsible-header {
+        font-size: 19px;
+        padding: 0 35px 0 20px;
+        line-height: 1.2;
+    }
+
+    .collapsible__img {
+        max-width: 32px;
+    }
+
+    .top__title {
+        margin: 0 5% 30px;
+        font-size: 36px;
+    }
+
+    .top {
+        padding: 45px 0;
+    }
+
+    .collapsible-header:after {
+        width: 12px;
+        height: 12px;
+        right: 25px;
+    }
+
+    .collapsible__item.active .collapsible-header:after {
+        right: 20px;
+    }
+
+    .sale__par,
+    .sale__item {
+        font-size: 16px;
+    }
+
+    .body-padding {
+        padding: 0 25px;
+    }
+
+    .collapsible-body {
+        padding: 20px 0 15px;
+    }
+
+    .sale__button {
+        font-size: 17px;
+    }
+
+    .sale__list {
+        margin-bottom: 25px;
     }
 }
